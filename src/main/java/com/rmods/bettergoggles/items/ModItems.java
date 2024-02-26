@@ -15,7 +15,6 @@ public class ModItems{
     public static final RegistryObject<Item> BETTER_GOGGLE = 
         ITEMS.register("better_goggle", () -> new BetterGoggle(new Item.Properties().stacksTo(1)));
 
-
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
