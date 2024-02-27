@@ -13,7 +13,9 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 public enum PlatingMaterial implements ArmorMaterial{
 
-    DIAMNOD_PlATING("diamond_plated_goggle", 343, 3, 10, Items.DIAMOND, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F);
+
+    DIAMNOD_PlATING("diamond_plated_goggle", 343, 3, 10, Items.DIAMOND, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F),
+    NETHERITE_PLATING("netherite_plated_goggle", 412, 3, 15, Items.NETHERITE_INGOT, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F);
 
     private final String name;
     private final int durability;

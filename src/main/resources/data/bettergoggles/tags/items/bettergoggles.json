@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "bettergoggles:diamond_plated_goggle"
+        "bettergoggles:diamond_plated_goggle",
+        "bettergoggles:netherite_plated_goggle"
     ]
 }

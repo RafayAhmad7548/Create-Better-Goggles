@@ -15,14 +15,11 @@ public class ModItems{
 
     public static final RegistryObject<Item> DIAMOND_PLATED_GOGGLE =
         ITEMS.register("diamond_plated_goggle", () -> new BetterGoggleItem(PlatingMaterial.DIAMNOD_PlATING, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> NETHERITE_PLATED_GOGGLE =
+        ITEMS.register("netherite_plated_goggle", () -> new BetterGoggleItem(PlatingMaterial.NETHERITE_PLATING, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
-
-
-
-
-
 
 }
