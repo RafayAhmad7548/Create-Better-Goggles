@@ -1,0 +1,5 @@
+/build/
+/.vscode/
+/.gradle/
+/run/
+/run-data/
