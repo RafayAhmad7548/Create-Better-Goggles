@@ -1,7 +1,9 @@
 package com.rmods.bettergoggles;
 
 import com.mojang.logging.LogUtils;
+import com.rmods.bettergoggles.fluids.ModFluids;
 import com.rmods.bettergoggles.items.ModItems;
+import com.simibubi.create.foundation.data.CreateRegistrate;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,15 +29,19 @@ public class BetterGoggles{
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
+    public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MODID);
+
     public BetterGoggles(){
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModFluids.register();
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        REGISTRATE.registerEventListeners(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event){
