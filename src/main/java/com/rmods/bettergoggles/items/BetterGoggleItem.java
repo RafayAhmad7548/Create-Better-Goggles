@@ -17,4 +17,5 @@ public class BetterGoggleItem extends ArmorItem{
         super(pMaterial, pType, pProperties);
     }
 
+
 }
