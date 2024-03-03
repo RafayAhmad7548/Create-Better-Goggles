@@ -1,16 +1,11 @@
 package com.rmods.bettergoggles;
 
-import com.jozufozu.flywheel.core.PartialModel;
 import com.mojang.logging.LogUtils;
 import com.rmods.bettergoggles.fluids.ModFluids;
 import com.rmods.bettergoggles.items.ModItems;
-import com.simibubi.create.AllPartialModels;
-import com.simibubi.create.Create;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 
-import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.ModelEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
