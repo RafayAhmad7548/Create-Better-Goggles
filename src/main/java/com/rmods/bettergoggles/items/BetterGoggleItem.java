@@ -22,6 +22,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+@SuppressWarnings("null")
 public class BetterGoggleItem extends Item implements Equipable{
 
     private final int defense;
@@ -73,11 +74,11 @@ public class BetterGoggleItem extends Item implements Equipable{
         return material.getEnchantmentValue();
     }
 
-    public boolean isValidRepairItem(ItemStack pToRepair, ItemStack pRepair) {
+    public boolean isValidRepairItem(@Nonnull ItemStack pToRepair, @Nonnull ItemStack pRepair) {
         return material.getRepairIngredient().test(pRepair) || super.isValidRepairItem(pToRepair, pRepair);
     }
 
-    public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot pEquipmentSlot) {
+    public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(@Nonnull EquipmentSlot pEquipmentSlot) {
         if(pEquipmentSlot == getEquipmentSlot()) return defaultModifiers;
         return ImmutableMultimap.of();
     }

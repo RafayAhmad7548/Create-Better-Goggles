@@ -1,6 +1,30 @@
 {
     "parent": "item/generated",
-    "textures": {
-        "layer0": "bettergoggles:item/netherite_plated_goggle"
+    "loader": "forge:separate_transforms",
+    "base": {
+        "parent": "bettergoggles:item/netherite_plated_goggle_3d"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "bettergoggles:item/netherite_plated_goggle_2d"
+        },
+        "ground": {
+            "parent": "bettergoggles:item/netherite_plated_goggle_2d"
+        },
+        "fixed": {
+            "parent": "bettergoggles:item/netherite_plated_goggle_2d"
+        },
+        "thirdperson_righthand": {
+            "parent": "bettergoggles:item/netherite_plated_goggle_2d"
+        },
+        "thirdperson_lefthand": {
+            "parent": "bettergoggles:item/netherite_plated_goggle_2d"
+        },
+        "firstperson_righthand": {
+            "parent": "bettergoggles:item/netherite_plated_goggle_2d"
+        },
+        "firstperson_lefthand": {
+            "parent": "bettergoggles:item/netherite_plated_goggle_2d"
+        }
     }
 }
