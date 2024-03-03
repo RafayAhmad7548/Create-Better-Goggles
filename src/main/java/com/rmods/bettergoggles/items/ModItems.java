@@ -20,7 +20,7 @@ public class ModItems{
     public static final ItemEntry<BetterGoggleItem> DIAMOND_PLATED_GOGGLE =
         REGISTRATE.item("diamond_plated_goggle", p -> new BetterGoggleItem(PlatingMaterial.DIAMNOD_PlATING, new Item.Properties()
         .stacksTo(1)))
-        .onRegister(CreateRegistrate.itemModel(() -> BetterGoggleModel::new))
+        // .onRegister(CreateRegistrate.itemModel(() -> BetterGoggleModel::new))
         .register();
 
     public static final ItemEntry<BetterGoggleItem> NETHERITE_PLATED_GOGGLE =
