@@ -9,15 +9,18 @@ import net.minecraftforge.client.model.BakedModelWrapper;
 
 public class BetterGoggleModel extends BakedModelWrapper<BakedModel>{
 
-    public BetterGoggleModel(BakedModel originalModel){
+	private PlatingMaterial material;
+
+    public BetterGoggleModel(BakedModel originalModel, PlatingMaterial material){
         super(originalModel);
+		this.material = material;
     }
     
 	@Override
 	public BakedModel applyTransform(ItemDisplayContext cameraItemDisplayContext, PoseStack mat, boolean leftHanded) {
 		if (cameraItemDisplayContext == ItemDisplayContext.HEAD)
-			return ModPartialModels.DIAMOND_PLATED_GOGGLE.get()
-				.applyTransform(cameraItemDisplayContext, mat, leftHanded);
+			if(material == PlatingMaterial.DIAMNOD_PlATING) return ModPartialModels.DIAMOND_PLATED_GOGGLE.get().applyTransform(cameraItemDisplayContext, mat, leftHanded);
+			else return ModPartialModels.NETHERITE_PLATED_GOGGLE.get().applyTransform(cameraItemDisplayContext, mat, leftHanded);
 		return super.applyTransform(cameraItemDisplayContext, mat, leftHanded);
 	}
 }
