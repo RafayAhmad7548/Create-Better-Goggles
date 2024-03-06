@@ -67,7 +67,7 @@ description='''${mod_description}'''
     modId="create"
     mandatory=true
     versionRange="[0.5.1,)"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 
 

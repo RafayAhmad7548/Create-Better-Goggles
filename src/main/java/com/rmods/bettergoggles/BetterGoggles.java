@@ -3,6 +3,7 @@ package com.rmods.bettergoggles;
 import com.mojang.logging.LogUtils;
 import com.rmods.bettergoggles.fluids.ModFluids;
 import com.rmods.bettergoggles.items.ModItems;
+import com.simibubi.create.AllItems;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 
 import net.minecraftforge.api.distmarker.Dist;

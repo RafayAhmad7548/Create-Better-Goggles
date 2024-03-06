@@ -1,4 +1,6 @@
 {
     "item.bettergoggles.diamond_plated_goggle": "Diamond Plated Goggle",
-    "item.bettergoggles.netherite_plated_goggle": "Netherite Plated Goggle"
+    "item.bettergoggles.netherite_plated_goggle": "Netherite Plated Goggle",
+    "item.bettergoggles.molten_diamond_bucket": "Bucket of Molten Diamond",
+    "fluid.bettergoggles.molten_diamond": "Molten Diamond"
 }

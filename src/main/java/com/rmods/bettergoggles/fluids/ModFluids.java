@@ -11,7 +11,7 @@ public class ModFluids{
     public static final FluidEntry<ForgeFlowingFluid.Flowing> MOLTEN_DIAMOND =
         REGISTRATE.fluid("molten_diamond", new ResourceLocation("bettergoggles:fluid/molten_diamond_still"), new ResourceLocation("bettergoggles:fluid/molten_diamond_flow"))
             .lang("Molten Diamond")
-            .properties(b -> b.canPushEntity(true).density(500).viscosity(1500))
+            .properties(b -> b.canPushEntity(true).density(500).viscosity(3000))
             .fluidProperties(b -> b.levelDecreasePerBlock(2))
             .register();
 
