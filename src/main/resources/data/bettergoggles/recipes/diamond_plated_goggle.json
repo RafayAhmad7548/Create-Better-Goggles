@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create:goggles"
+    },
+    {
+      "amount": 100,
+      "fluid": "bettergoggles:molten_diamond",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "bettergoggles:diamond_plated_goggle"
+    }
+  ]
+}

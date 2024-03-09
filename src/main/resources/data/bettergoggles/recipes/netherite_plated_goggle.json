@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "bettergoggles:diamond_plated_goggle"
+    },
+    {
+      "amount": 100,
+      "fluid": "bettergoggles:molten_netherite",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "bettergoggles:netherite_plated_goggle"
+    }
+  ]
+}

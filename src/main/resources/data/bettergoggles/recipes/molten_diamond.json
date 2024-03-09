@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "bettergoggles:molten_diamond"
+    }
+  ]
+}
